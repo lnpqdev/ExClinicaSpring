@@ -20,15 +20,15 @@ public class PacienteModel {
 	@Size(min=2, max=80)
 	private String nome;
 	
-	@Column(name="nome", nullable=false)
+	@Column(name="endereço", nullable=false)
 	@Size(min=2, max=80)
 	private String endereço;
 	
-	@Column(name="nome", nullable=false)
+	@Column(name="cep", nullable=false)
 	@Size(max=9)
 	private String cep;
 	
-	@Column(name="nome", nullable=false)
+	@Column(name="telefone", nullable=false)
 	@Size(max=9)
 	private String telefone;
 	

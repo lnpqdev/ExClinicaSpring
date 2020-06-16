@@ -41,7 +41,7 @@ import com.generation.clinica.repository.MedicoRepository;
 		@GetMapping("/medico/{nome}") 
 		public ResponseEntity<List<MedicoModel>>
 		getByNome(@PathVariable String nome) {
-			return ResponseEntity.ok(repository.findAllBynomeEspecialidadeContainingIgnoreCase(nome));
+			return ResponseEntity.ok(repository.findAllBynomeContainingIgnoreCase(nome));
 		}
 		
 		//post
@@ -61,7 +61,7 @@ import com.generation.clinica.repository.MedicoRepository;
 		}
 		
 		//delete
-		@DeleteMapping("/{codMedico}")
+		@DeleteMapping("/{crm}")
 		public void delete(@PathVariable String crm)
 		{
 			repository.deleteById(crm);

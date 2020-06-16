@@ -41,13 +41,7 @@ public class PacienteController {
 	public ResponseEntity<List<PacienteModel>> GetAll() {
 		return ResponseEntity.ok(repository.findAll()); }
 	
-	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<PacienteModel>>
-	getByNome(@PathVariable String nome) {
-		return ResponseEntity.ok(repository.findAllBynomeEspecialidadeContainingIgnoreCase(nome));
 	
-	
-	}
 	
 	//post
 	@PostMapping
@@ -66,7 +60,7 @@ public class PacienteController {
 	}
 	
 	//delete
-	@DeleteMapping("/{codEspecialidade}")
+	@DeleteMapping("/{codPaciente}")
 	public void delete(@PathVariable long codPaciente)
 	{
 		repository.deleteById(codPaciente);

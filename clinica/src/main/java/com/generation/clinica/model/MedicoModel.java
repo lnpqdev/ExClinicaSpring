@@ -22,8 +22,7 @@ public class MedicoModel {
 	
 	//chave estrangeira - relacionada com a tabela especialidade
 	@ManyToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="codEspecialidade",
-	referencedColumnName="codEspecialidade")
+	@JoinColumn(name="codEspecialidade",referencedColumnName="codEspecialidade")
 	
 	private EspecialidadeModel especialidade;
 
@@ -50,6 +49,7 @@ public class MedicoModel {
 	public void setEspecialidade(EspecialidadeModel especialidade) {
 		this.especialidade = especialidade;
 	}
+	
 	
 	
 

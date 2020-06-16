@@ -10,6 +10,6 @@ import com.generation.clinica.model.MedicoModel;
 @Repository
 public interface MedicoRepository extends JpaRepository<MedicoModel, String>{
 	
-	public List<MedicoModel> findAllBynomeEspecialidadeContainingIgnoreCase(String nome);
+	public List<MedicoModel> findAllBynomeContainingIgnoreCase(String nome);
 
 }

@@ -35,10 +35,10 @@ public class FichaModel {
 	@Column(name="valorConsulta", nullable=false)
 	private double valorConsulta;
 	
-	@Column(name="exame", length=255)
+	@Column(name="diagnostico", length=255)
 	private String diagnostico;
 	
-	@Column(name="exame", length=255)
+	@Column(name="procedimento", length=255)
 	private String procedimento;
 	
 	@Column(name="exame", length=255)
@@ -46,11 +46,6 @@ public class FichaModel {
 	
 	@Column(name="dataRetorno")
 	private Date dataRetorno;
-	
-	
-	
-
-	
 
 	public long getCodFicha() {
 		return codFicha;
@@ -125,6 +120,7 @@ public class FichaModel {
 	}
 	
 	
+
 	
 
 }
